@@ -18,7 +18,7 @@
 }
 img{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 .container{
    max-width: 80%;
@@ -32,53 +32,53 @@ img{
 }
 header{
     background: #fff;
-    padding: 1.30rem 0;
+    padding: 1.20rem 0;
     position:sticky ;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 50;
+    z-index: 30;
 }
-.hero header .menu{
+ header .menu{
 display: flex;
 align-items: center;
 justify-content: space-between;
 
 }
-.hero header .menu .logo a{
+ header .menu .logo a{
     text-decoration: none;
     color: #222;
 }
-.hero header .menu .logo h2{
+ header .menu .logo h2{
    font-size: 2rem;
    cursor: pointer; 
 }
-.hero header .menu .logo h2 span{
+ header .menu .logo h2 span{
     color: #004badff;
 }
-.hero header .menu ul{
+ header .menu ul{
     display: flex;
     align-items: center;
     gap: 27px;
 }
-.hero header .menu ul li{
+ header .menu ul li{
   list-style: none;
 }
-.hero header .menu ul li .btn a{
+ header .menu ul li .btn a{
     color: #fff;
     text-decoration: none;
 }
-.hero header .menu ul li .btn a:hover{
+ header .menu ul li .btn a:hover{
     color: #fff;
 }
-.hero header .menu ul li a{
+ header .menu ul li a{
     color: #333;
     text-decoration:none;
     font-weight: 600;
     font-size: 1.2rem;
     transition: .5s;
 }
-.hero header .menu ul li a:hover{
+ header .menu ul li a:hover{
     color: #004badff;
 }
 .humbergar{
@@ -177,7 +177,7 @@ header .desck-top{
 .top-rated .container .ciwaan h2{
     color: black;
 }
-.top-rated .container .ciwaan h2 i{
+ .bxs-star,.bxs-star-half{
     color: orange;
 }
 .top-rated .container .coloms .colom{
@@ -435,6 +435,77 @@ footer img{
 
 
 
+
+
+
+/* ----------------------------------------------store----------------------------------- */
+
+.store .container{
+    width: 76%;
+    padding-bottom: 4rem;
+}
+.store .container .store-content{
+    display:flex;
+    flex-direction:column ;
+    /* gap: 10px; */
+}
+.store .container .store-content h3{
+    color: #004badff;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+.store .container .store-content .coloms{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.store .container .store-content .coloms .colom{
+    border: 1px solid rgb(196, 195, 195);
+    padding: 10px;
+    border-radius: 10px;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.store .container .store-content .coloms .colom div{
+    position: relative;
+}
+.store .container .store-content .coloms .colom div small{
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+}
+.store .container .store-content .coloms .colom div small .span1{
+    text-decoration: line-through;
+    color: #555;
+    margin-right: 20px;
+}
+/* .image-bottom{
+    margin-bottom: 100% !important;
+    position: absolute;
+    bottom: 1%;
+    right: 0;
+} */
+
+.contect-us{
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    text-decoration: none;
+    padding: 4px 6px;
+    background: #004badff;
+    font-size: 13px;
+    color: white;
+    font-weight: 600;
+    border-radius: 3px;
+    display: flex;
+    text-align: center;
+}
+
+
+
+
 @media (max-width:900px){
     .container{
         max-width: 89%;
@@ -448,10 +519,10 @@ footer img{
     .humbergar i{
         display: block;
     }
-.hero header .menu .logo h2{
+ header .menu .logo h2{
   font-size: 1.44rem;
 }
-    .hero header .menu .mobile{
+    header .menu .mobile{
         display: none;
     }
     header .desck-top{
@@ -523,6 +594,16 @@ footer img{
     font-size: 2rem;
 }
 
+
+/* ----------------------------store------------------------- */
+.store .container .store-content .coloms{
+    grid-template-columns: repeat(3,1fr);
+}
+.store .container{
+    width: 89%;
+
+}
+
 } 
 
 @media (max-width:640px){
@@ -572,5 +653,30 @@ footer img{
     .about .container .content4{
         grid-template-columns:1fr;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ----------------------------store------------------------- */
+.store .container .store-content .coloms{
+    grid-template-columns:repeat(2,1fr);
+}
+.store .container .store-content .coloms .colom div small{
+    font-size: 13px;
+}
+.store .container .store-content .coloms .colom div small .span1{
+    margin-right: 10px;
+}
+.contect-us{
+    font-size: 10px;
+}
 
 }
