@@ -502,9 +502,23 @@ footer img{
     display: flex;
     text-align: center;
 }
+.aproving{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #004badff;
+    color: white;
+}
 
 
 
+
+
+/* -----------------------pricing--------------- */
+.pricing .ciwaan h2{
+    color: #000;
+}
 
 @media (max-width:900px){
     .container{
@@ -607,7 +621,9 @@ footer img{
 } 
 
 @media (max-width:640px){
-  
+    .aproving h2{
+        font-size: 13px;
+    }
     .hero .bunner .text{
         /* margin-top: 18%; */
     }
